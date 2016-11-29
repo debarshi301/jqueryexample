@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="themes/mobile.css"/>
+        <link rel="stylesheet" href="themes/CS643.css"/>
+        <link rel="stylesheet" href="themes/CS643.min.css"/>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <title>Mobile Education Project</title>
+    </head>
+    <style type="text/css">
+        .ui-icon-usaicon{
+            background-image: url("images/flags/usa.png");
+        }
+        .ui-icon-philicon{
+            background-image: url("images/flags/philipines.png");
+        }
+    </style>
+    <body>
+        
+<!-- BIOLOGY ENGLISH PAGE -->
+        <div data-role="page" data-theme="d" id="pageone">
+            <div data-role="header">
+                <h1>Biology</h1>
+            </div>
+            <div data-role ="main">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#pageone" data-icon="grid">Biology</a></li>
+                        <li><a href="#pagetwo" data-icon="grid">Organic Chemistry</a></li>
+                    </ul>
+                </div>
+                <ul data-role="listview" data-inset="true" style="margin:10% 10% 10% 10%" >
+                <li><a href="#physiology"><img src="images/Grad_Physiology_Icon.png">Physiology</a></li>
+                <li><a href="#genetics"><img src="images/Biochemistry-512.png">Genetics</a></li>
+                <li><a href="#cellbio"><img src="images/Human_Cell-512.png">Cell Biology</a></li>
+                <li><a href="#micro"><img src="images/microscope-512.png">Microbiology</a></li>
+                </ul>
+            </div>
+            <div data-role = "footer">
+                <p class="icons"><a href="#pageone" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#biotag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a></p>
+            </div>
+        </div>
+        
+        
+<!-- ORGANIC CHEM ENGLISH PAGE -->
+        <div data-role="page" data-theme="d" id="pagetwo">
+            <div data-role="header">
+                <h1>Organic Chemistry</h1>
+            </div>
+            <div data-role ="main">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#pageone" data-icon="grid" data-transition ="fade">Biology</a></li>
+                        <li><a href="#pagetwo" data-icon="grid" data-transition = "fade">Organic Chemistry</a></li>
+                    </ul>
+                </div>
+                <ul data-role="listview" data-inset="true" style="margin:10% 10% 10% 10%" >
+                    <li><a href="#rxneng"><img src="images/namethatrxn.png">Name that Reaction</a></li>
+                    <li><a href=""><img src="images/apple-touch-icon@2.png">Subsitution Reaction</a></li>
+                    <li><a href=""><img src="images/organic-chemistry-science-education-badge-logo-512.png">Elmination Reaction</a></li>
+                    <li><a href="#alkeng"><img src="images/alkene1.jpg">Alkene Reaction</a></li>
+                    <li><a href="#alkyneeng"><img src="images/alkyne.gif">Alkyne Reaction</a></li>
+                </ul>
+            </div>
+            <div data-role = "footer">
+                <p class="icons"><a href="#pagetwo" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#chemtag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a></p>
+            </div>
+        </div>
+        
+<!-- NAME THAT RXN ENGLISH -->
+        <div data-role="page" data-theme="d" id="rxneng">
+            <div data-role="header">
+                <h1>Name that Reaction</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#pageone" data-icon="grid" data-transition ="fade">Biology</a></li>
+                        <li><a href="#pagetwo" data-icon="grid" data-transition = "fade">Organic Chemistry</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role ="main">
+                <h2 class="question">What is this reaction called?</h2>
+                <img src="images/orgorxn/grignard.png" width="50%" height="50%" class="picture" >
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <legend>Check all that applies: </legend>
+                            <input type="checkbox" name="checkbox-1c" id="checkbox-1c" class="rxntag">
+                            <label for="checkbox-1c">Grignard Reaction</label>
+                            
+                            <input type="checkbox" name="checkbox-2c" id="checkbox-2c" class="rxntag">
+                            <label for="checkbox-2c">Geward Reaction</label>
+                        
+                            <input type="checkbox" name="checkbox-3c" id="checkbox-3c" class="rxntag">
+                            <label for="checkbox-3c">Grubbs Reaction</label>
+                        
+                            <input type="checkbox" name="checkbox-4c" id="checkbox-4c" class="rxntag">
+                            <label for="checkbox-4c">Heck Reaction</label>
+                    </fieldset>
+                    <input type="button" value="Submit">
+                    <a href="next.html" data-role="button">Next</a>
+                </div>
+            </div>
+            <div data-role = "footer">
+                <p class="icons"><a href="#rxneng" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#rxntag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a></p>
+            </div>
+        </div>
+        
+        
+<!-- ALKENE ENGLIGH -->
+        <div data-role="page" data-theme="d" id="alkeng">
+            <div data-role="header">
+                <h1>Alkene Reaction</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#pageone" data-icon="grid" data-transition ="fade">Biology</a></li>
+                        <li><a href="#pagetwo" data-icon="grid" data-transition = "fade">Organic Chemistry</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role ="main">
+                <h2 class="question">Bromination of Alkene</h2>
+                <img src="images/orgorxn/Bromination/Bromination.png" width="50%" height="50%" class="picture" >
+                <div data-role="collapsible">
+                    <h3>Step 1</h3>
+                    <p>Polarisation of the bromine molecule</p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Step 2</h3>
+                    <p><img src="images/orgorxn/Bromination/BroStep2.png" width="80%" height="80%" class="picture"></p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Step 3</h3>
+                    <p><img src="images/orgorxn/Bromination/BroStep3.png" width="80%" height="80%" class="picture"></p>
+                </div>
+                <input type="button" value="Next Reaction">
+
+            </div>
+            <div data-role = "footer">
+                <p class="icons"><a href="#alkeng" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#alktag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a></p>
+            </div>
+        </div>
+        
+<!-- Alkyne RXN -->
+        <div data-role="page" data-theme="d" id="alkyneeng">
+            <div data-role="header">
+                <h1>Alkyne Reaction</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#pageone" data-icon="grid" data-transition ="fade">Biology</a></li>
+                        <li><a href="#pagetwo" data-icon="grid" data-transition = "fade">Organic Chemistry</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role ="main">
+                <h2 class="question">Halogenation of Alkyne</h2>
+                <img src="images/orgorxn/halogenation/halogenation.png" width="80%" height="80%" class="picture" >
+                <div data-role="collapsible">
+                    <h3>Step 1</h3>
+                    <p><img src="images/orgorxn/halogenation/step1.png" width="80%" height="80%"></p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Step 2</h3>
+                    <p><img src="images/orgorxn/halogenation/step2.png" width="80%" height="80%" class="picture"></p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Step 3</h3>
+                    <p><img src="images/orgorxn/halogenation/step3.png" width="80%" height="80%" class="picture"></p>
+                </div>
+                <input type="button" value="Next Reaction">
+
+            </div>
+            <div data-role = "footer">
+                <p class="icons"><a href="#alkyneeng" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#alkytag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a></p>
+            </div>
+        </div>
+        
+        
+<!-- PHYSIO ENGLISH PAGE-->       
+        <div data-role="page" data-theme="d" id="physiology">
+            <div data-role="header">
+                <h1>Physiology</h1>
+            </div>
+            <div data-role ="main">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#pageone" data-icon="grid" data-transition ="fade">Biology</a></li>
+                        <li><a href="#pagetwo" data-icon="grid" data-transition = "fade">Organic Chemistry</a></li>
+                    </ul>
+                </div>
+                <ul data-role="listview" data-inset="true" style="margin:10% 10% 10% 10%" >
+                    <li><a href="#nervous"><img src="images/physiologyicons/nervous.png">Nervous System</a></li>
+                    <li><a href=""><img src="images/physiologyicons/digest.png">Digestive System</a></li>
+                    <li><a href=""><img src="images/physiologyicons/circ.png">Circulatory System</a></li>
+                    <li><a href=""><img src="images/physiologyicons/ear.png">Auditory System</a></li>
+                    <li><a href=""><img src="images/physiologyicons/eye.png">Human Eye</a></li>
+                    <li><a href=""><img src="images/physiologyicons/antibody.png">Immune System</a></li>
+                </ul>
+            </div>
+            <div data-role = "footer">
+                <p class="icons"><a href="#physiology" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#physiotag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a></p>
+            </div>
+        </div>
+        
+        
+ <!-- GENETICS ENGLISH PAGE -->       
+        <div data-role="page" data-theme="d" id="genetics">
+            <div data-role="header">
+                <h1>Genetics</h1>
+            </div>
+            <div data-role ="main">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#pageone" data-icon="grid" data-transition ="fade">Biology</a></li>
+                        <li><a href="#pagetwo" data-icon="grid" data-transition = "fade">Organic Chemistry</a></li>
+                    </ul>
+                </div>
+                <ul data-role="listview" data-inset="true" style="margin:10% 10% 10% 10%" >
+                    <li><a href=""><img src="images/genetics/genconcept.png">Genetic Concepts</a></li>
+                    <li><a href=""><img src="images/genetics/mendal.png">Mendel's Law</a></li>
+                    <li><a href=""><img src="images/genetics/xy.jpg">Sex Chromosomes</a></li>
+                </ul>
+            </div>
+            <div data-role = "footer">
+                <p class="icons"><a href="#genetics" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#gentag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a></p>
+            </div>
+        </div>
+<!-- GENEITCS TAG PAGE-->
+        <div data-role="page" data-theme="d" id="gentag">
+            <div data-role="header">
+                <h1>Genetika</h1>
+            </div>
+            <div data-role ="main">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biotag" data-icon="grid" data-transition ="fade">Byolohiya</a></li>
+                        <li><a href="#chemtag" data-icon="grid" data-transition = "fade">Kimika</a></li>
+                    </ul>
+                </div>
+                <ul data-role="listview" data-inset="true" style="margin:10% 10% 10% 10%" >
+                    <li><a href=""><img src="images/genetics/genconcept.png">Genetika Konsepto</a></li>
+                    <li><a href=""><img src="images/genetics/mendal.png">Mendel's Batas</a></li>
+                    <li><a href=""><img src="images/genetics/xy.jpg">Seka Kromosoma</a></li>
+                </ul>
+            </div>
+            <div data-role = "footer">
+                <p class="icons"><a href="#genetics" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#gentag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a></p>
+            </div>
+        </div>
+
+        
+<!-- CELL BIO ENGLISH PAGE -->
+        <div data-role="page" data-theme="d" id="cellbio">
+            <div data-role="header">
+                <h1>Cell Biology</h1>
+            </div>
+            <div data-role ="main">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#pageone" data-icon="grid" data-transition ="fade">Biology</a></li>
+                        <li><a href="#pagetwo" data-icon="grid" data-transition = "fade">Organic Chemistry</a></li>
+                    </ul>
+                </div>
+                <ul data-role="listview" data-inset="true" style="margin:10% 10% 10% 10%" >
+                    <li><a href=""><img src="images/cellstrut/cellstrut.gif">Cell Structure</a></li>
+                    <li><a href=""><img src="images/cellstrut/cellwall.JPG">Cell Membrane</a></li>
+                    <li><a href=""><img src="images/cellstrut/photo.png">Photosynthesis</a></li>
+                </ul>
+            </div>
+            <div data-role = "footer">
+                <p class="icons"><a href="#cellbio" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#celltag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a></p>
+            </div>
+        </div>
+<!-- Cell Bio Tag Page -->
+        <div data-role="page" data-theme="d" id="celltag">
+            <div data-role="header">
+                <h1>Selda Byolohiya</h1>
+            </div>
+            <div data-role ="main">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biotag" data-icon="grid" data-transition ="fade">Byolohiya</a></li>
+                        <li><a href="#chemtag" data-icon="grid" data-transition = "fade">Kimika</a></li>
+                    </ul>
+                </div>
+                <ul data-role="listview" data-inset="true" style="margin:10% 10% 10% 10%" >
+                    <li><a href=""><img src="images/cellstrut/cellstrut.gif">Selda Kaayusan</a></li>
+                    <li><a href=""><img src="images/cellstrut/cellwall.JPG">Selda Lamad</a></li>
+                    <li><a href=""><img src="images/cellstrut/photo.png">Potosintesis</a></li>
+                </ul>
+            </div>
+            <div data-role = "footer">
+                <p class="icons"><a href="#cellbio" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#celltag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a></p>
+            </div>
+        </div>
+
+<!-- MICROBIOLOGY ENGLISH PAGE -->
+        <div data-role="page" data-theme="d" id="micro">
+            <div data-role="header">
+                <h1>Microbiology</h1>
+            </div>
+            <div data-role ="main">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#pageone" data-icon="grid" data-transition ="fade">Biology</a></li>
+                        <li><a href="#pagetwo" data-icon="grid" data-transition = "fade">Organic Chemistry</a></li>
+                    </ul>
+                </div>
+                <ul data-role="listview" data-inset="true" style="margin:10% 10% 10% 10%" >
+                    <li><a href=""><img src="images/micro/bacteria.png">Bacteria</a></li>
+                    <li><a href=""><img src="images/micro/protists.jpg">Protists</a></li>
+                    <li><a href=""><img src="images/micro/fungi.png">Fungi</a></li>
+                    <li><a href=""><img src="images/micro/vir.ico">Virus</a></li>
+                </ul>
+            </div>
+            <div data-role = "footer">
+                <p class="icons"><a href="#micro" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#microtag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a></p>
+            </div>
+        </div>
+        
+        
+<!-- MICRO TAG PAGE-->
+        <div data-role="page" data-theme="d" id="microtag">
+            <div data-role="header">
+                <h1>Mikrobiyolohiya</h1>
+            </div>
+            <div data-role ="main">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biotag" data-icon="grid" data-transition ="fade">Byolohiya</a></li>
+                        <li><a href="#chemtag" data-icon="grid" data-transition = "fade">Kimika</a></li>
+                    </ul>
+                </div>
+                <ul data-role="listview" data-inset="true" style="margin:10% 10% 10% 10%" >
+                    <li><a href=""><img src="images/micro/bacteria.png">Bakterya</a></li>
+                    <li><a href=""><img src="images/micro/protists.jpg">Protists</a></li>
+                    <li><a href=""><img src="images/micro/fungi.png">Fungi</a></li>
+                    <li><a href=""><img src="images/micro/vir.ico">Virus</a></li>
+                </ul>
+            </div>
+            <div data-role = "footer">
+                <p class="icons"><a href="#micro" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#microtag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a></p>
+            </div>
+        </div>
+        
+        
+        
+        
+ <!-- NERVOUS SYSTEM ENGLISH PAGE-->       
+       
+        <div data-role="page" data-theme="d" id="nervous">
+            <div data-role="header">
+                <h1>Nervous System</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#pageone" data-icon="grid" data-transition ="fade">Biology</a></li>
+                        <li><a href="#pagetwo" data-icon="grid" data-transition = "fade">Organic Chemistry</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role ="main">
+                <h2 class="question">What are the three main parts into which a neuron can be divided?</h2>
+                <img src="images/physiologyicons/nervoussystem/Neurona.png" width="50%" height="50%" class="picture" >
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <legend>Check all that applies: </legend>
+                            <input type="checkbox" name="checkbox-1a" id="checkbox-1a" class="custom">
+                            <label for="checkbox-1a">Dendrites</label>
+                            
+                            <input type="checkbox" name="checkbox-2a" id="checkbox-2a" class="custom">
+                            <label for="checkbox-2a">Cell body</label>
+                        
+                            <input type="checkbox" name="checkbox-3a" id="checkbox-3a" class="custom">
+                            <label for="checkbox-3a">Axon</label>
+                        
+                            <input type="checkbox" name="checkbox-4a" id="checkbox-4a" class="custom">
+                            <label for="checkbox-4a">Plasma Membrane</label>
+                    </fieldset>
+                    <input type="button" value="Submit">
+                    <a href="" data-role="button">Next</a>
+                </div>
+            </div>
+            <div data-role = "footer">
+                <p class="icons"><a href="#nervous" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#nervtag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a></p>
+            </div>
+        </div>
+
+        
+        
+        
+        
+        
+<!-- BIOLOGY TAGALOG PAGE-->       
+        <div data-role="page" data-theme="d" id="biotag">
+            <div data-role="header">
+                <h1>Byolohiya</h1>
+            </div>
+            <div data-role ="main">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biotag" data-icon="grid">Byolohiya</a></li>
+                        <li><a href="#chemtag" data-icon="grid"> Kimika</a></li>
+                    </ul>
+                </div>
+                <ul data-role="listview" data-inset="true" style="margin:10% 10% 10% 10%" >
+                <li><a href="#physiotag"><img src="images/Grad_Physiology_Icon.png">Pisyolohiya</a></li>
+                <li><a href="#gentag"><img src="images/Biochemistry-512.png">Genetika</a></li>
+                <li><a href="#celltag"><img src="images/Human_Cell-512.png">Selda Byolohiya</a></li>
+                <li><a href="#microtag"><img src="images/microscope-512.png">Mikrobiyolohiya</a></li>
+                </ul>
+            </div>
+            <div data-role = "footer">
+                <p class="icons"><a href="#pageone" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#biotag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a></p>
+            </div>
+        </div>
+        
+<!-- PHYSIO TAG -->
+        
+        <div data-role="page" data-theme="d" id="physiotag">
+            <div data-role="header">
+                <h1>Pisyolohiya</h1>
+            </div>
+            <div data-role ="main">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biotag" data-icon="grid" data-transition ="fade">Byolohiya</a></li>
+                        <li><a href="#chemtag" data-icon="grid" data-transition = "fade">Kimika</a></li>
+                    </ul>
+                </div>
+                <ul data-role="listview" data-inset="true" style="margin:10% 10% 10% 10%" >
+                    <li><a href="#nervtag"><img src="images/physiologyicons/nervous.png">Kinakabahan Sistema</a></li>
+                    <li><a href=""><img src="images/physiologyicons/digest.png">Ng Pagtunaw Sistema</a></li>
+                    <li><a href=""><img src="images/physiologyicons/circ.png">Gumagala Sistema</a></li>
+                    <li><a href=""><img src="images/physiologyicons/ear.png">Pandinig Sistema</a></li>
+                    <li><a href=""><img src="images/physiologyicons/eye.png">Pantao Mata</a></li>
+                    <li><a href=""><img src="images/physiologyicons/antibody.png">May kabal Sistema</a></li>
+                </ul>
+            </div>
+            <div data-role = "footer">
+                <p class="icons"><a href="#physiology" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#biotag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a></p>
+            </div>
+        </div>
+        
+ <!-- Nervous tag -->
+        <div data-role="page" data-theme="d" id="nervtag">
+            <div data-role="header">
+                <h1>Kinakabahan Sistema</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biotag" data-icon="grid" data-transition ="fade">Byolohiya</a></li>
+                        <li><a href="#chemtag" data-icon="grid" data-transition = "fade">Kimika</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role ="main">
+                <h2 class="question">Tatlo pangunahin bahagi ng isang neruon?</h2>
+                <img src="images/physiologyicons/nervoussystem/Neurona.png" width="50%" height="50%" class="picture" >
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <legend>Surin ang lahat na nalalapat: </legend>
+                            <input type="checkbox" name="checkbox-1b" id="checkbox-1b" class="customtag">
+                            <label for="checkbox-1b">Dendrites</label>
+                            
+                            <input type="checkbox" name="checkbox-2b" id="checkbox-2b" class="customtag">
+                            <label for="checkbox-2b">Selda Katawan</label>
+                        
+                            <input type="checkbox" name="checkbox-3b" id="checkbox-3b" class="customtag">
+                            <label for="checkbox-3b">Axon</label>
+                        
+                            <input type="checkbox" name="checkbox-4b" id="checkbox-4b" class="customtag">
+                            <label for="checkbox-4b">Plasma Lamad</label>
+                    </fieldset>
+                    <input type="button" value="Ipasa">
+                    <a href="" data-role="button">Susunod</a>
+                </div>
+            </div>
+            <div data-role = "footer">
+                <p class="icons"><a href="#nervous" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#nervtag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a></p>
+            </div>
+        </div>
+        
+<!-- Chem Tag -->
+        <div data-role="page" data-theme="d" id="chemtag">
+            <div data-role="header">
+                <h1>Kimika</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biotag" data-icon="grid" data-transition ="fade">Byolohiya</a></li>
+                        <li><a href="#chemtag" data-icon="grid" data-transition = "fade">Kimika</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role ="main">
+                
+                <ul data-role="listview" data-inset="true" style="margin:10% 10% 10% 10%" >
+                    <li><a href="#rxntag"><img src="images/namethatrxn.png">Reaksyon</a></li>
+                    <li><a href=""><img src="images/apple-touch-icon@2.png">Pagpapalit Reaksyon</a></li>
+                    <li><a href=""><img src="images/organic-chemistry-science-education-badge-logo-512.png">Pag-aalis Reaksyon</a></li>
+                    <li><a href="#alktag"><img src="images/alkene1.jpg">Alkene Reaksyon</a></li>
+                    <li><a href="#alkytag"><img src="images/alkyne.gif">Alkyne Reaksyon</a></li>
+                </ul>
+            </div>
+            <div data-role = "footer">
+                <p class="icons"><a href="#pagetwo" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#chemtag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a></p>
+            </div>
+        </div>
+        
+        
+<!-- Name RXN Tag -->
+        <div data-role="page" data-theme="d" id="rxntag">
+            <div data-role="header">
+                <h1>Reaksyon</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biotag" data-icon="grid" data-transition ="fade">Byolohiya</a></li>
+                        <li><a href="#chemtag" data-icon="grid" data-transition = "fade">Kimika</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role ="main">
+                <h2 class="question">Panagalan ito reaksyon?</h2>
+                <img src="images/orgorxn/grignard.png" width="50%" height="50%" class="picture" >
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <legend>Surin ang lahat na nalalapat: </legend>
+                            <input type="checkbox" name="checkbox-1d" id="checkbox-1d" class="rxntag">
+                            <label for="checkbox-1d">Grignard Reaksyon</label>
+                            
+                            <input type="checkbox" name="checkbox-2d" id="checkbox-2d" class="rxntag">
+                            <label for="checkbox-2d">Geward Reaksyon</label>
+                        
+                            <input type="checkbox" name="checkbox-3d" id="checkbox-3d" class="rxntag">
+                            <label for="checkbox-3d">Grubbs Reaksyon</label>
+                        
+                            <input type="checkbox" name="checkbox-4d" id="checkbox-4d" class="rxntag">
+                            <label for="checkbox-4d">Heck Reaksyon</label>
+                    </fieldset>
+                    <input type="button" value="Ipasa">
+                    <a href="next.html" data-role="button">Susunod</a>
+                </div>
+            </div>
+            <div data-role = "footer">
+                <p class="icons"><a href="#rxneng" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#rxntag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a></p>
+            </div>
+        </div>
+        
+<!-- Alkene Rxn tag-->
+        <div data-role="page" data-theme="d" id="alktag">
+            <div data-role="header">
+                <h1>Alkene Reaksyon</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biotag" data-icon="grid" data-transition ="fade">Byolohiya</a></li>
+                        <li><a href="#chemtag" data-icon="grid" data-transition = "fade">Kimika</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role ="main">
+                <h2 class="question">Bromination ng Alkene</h2>
+                <img src="images/orgorxn/Bromination/Bromination.png" width="50%" height="50%" class="picture" >
+                <div data-role="collapsible">
+                    <h3>Hakbang 1</h3>
+                    <p>Polariseysyon ng bromine molekyul</p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Hakbang 2</h3>
+                    <p><img src="images/orgorxn/Bromination/BroStep2.png" width="80%" height="80%" class="picture"></p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Hakbang 3</h3>
+                    <p><img src="images/orgorxn/Bromination/BroStep3.png" width="80%" height="80%" class="picture"></p>
+                </div>
+                <input type="button" value="Susunod Reaksyon">
+
+            </div>
+            <div data-role = "footer">
+                <p class="icons"><a href="#alkeng" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#alktag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a></p>
+            </div>
+        </div>
+
+<!-- Alkyne RXN TAg-->
+        <div data-role="page" data-theme="d" id="alkytag">
+            <div data-role="header">
+                <h1>Alkyne Reaksyon</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#biotag" data-icon="grid" data-transition ="fade">Byolohiya</a></li>
+                        <li><a href="#chemtag" data-icon="grid" data-transition = "fade">Kimika</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-role ="main">
+                <h2 class="question">Halogenation ng Alkyne</h2>
+                <img src="images/orgorxn/halogenation/halogenation.png" width="80%" height="80%" class="picture" >
+                <div data-role="collapsible">
+                    <h3>Hakbang 1</h3>
+                    <p><img src="images/orgorxn/halogenation/step1.png" width="80%" height="80%"></p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Hakbang 2</h3>
+                    <p><img src="images/orgorxn/halogenation/step2.png" width="80%" height="80%" class="picture"></p>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Hakbang 3</h3>
+                    <p><img src="images/orgorxn/halogenation/step3.png" width="80%" height="80%" class="picture"></p>
+                </div>
+                <input type="button" value="Susunod Reaksyon">
+
+            </div>
+            <div data-role = "footer">
+                <p class="icons"><a href="#alkyneeng" data-role="button"  data-icon="usaicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a>
+                    <a href="#alkytag" data-role="button"  data-icon="philicon" data-inline="true" data-mini="true" class="ui-nodisc-icon"></a></p>
+            </div>
+        </div>
+        
+        
+    </body>
+</html>
